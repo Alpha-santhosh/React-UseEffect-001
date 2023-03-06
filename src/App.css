@@ -1,38 +1,137 @@
-.App {
+.searchBox {
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+h1 {
+  color: green;
   text-align: center;
+  padding-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  flex-grow: 1;
+  outline: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+
+  border: none;
+  background-color: green;
+  padding: 5px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  height: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 200px;
+  padding: 4px;
+  border: 1px solid #e6e6e6;
+  background: linear-gradient(to bottom, #ffffff 60%, #f7f7f7 100%);
+  transition: all 0.5s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: scale(1.01);
+  border: 1px solid red;
+}
+
+.fetchapi {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 100px;
+}
+.fetchapi {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.top {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: 100%;
+  height: 200px;
+  display: inline-block;
+}
+
+.label {
+  height: 34px;
+  font-size: 14px;
+  text-shadow: 1px 1px 0px #fff;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+
+.mid {
+  padding: 10px 0px 8px;
+  margin: 0px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  background-color: transparent;
+}
+
+.calories {
+  border-right: 1px solid #d9d9d9;
+  width: 89px;
+  white-space: nowrap;
+  color: #666;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #fff;
+  font-size: 12px;
+}
+
+.ingredients {
+  border-left: 1px solid #fff;
+  width: 89px;
+  white-space: nowrap;
+  color: #666;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0px #fff;
+  font-size: 12px;
+}
+
+.greenColorText {
+  color: #7c0;
+  font-size: 12px;
+  text-shadow: 1px 1px 0px #fff;
+}
+
+.bottom {
+  text-align: center;
+}
+
+.source {
+  font: bold 12px/26px Arial;
+  text-shadow: 1px 1px 0px #fff;
+  color: #999;
 }
